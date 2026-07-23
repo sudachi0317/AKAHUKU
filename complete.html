@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- 🌿 ヘッダー -->
+    <div id="headertwo-container"></div>
+
+    <!-- 🌿 ナビゲーション -->
+    <section class="bg-transparent pt-3">
+        <div id="navifour-container" class="px-5">
+        </div>
+    </section>
+
+    <!-- 🌿 完了画面 -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        <div class="relative overflow-hidden text-center p-6 sm:p-8 bg-yellow-50 shadow-lg">
+
+            <!-- 丸いチェックアイコン（レスポンシブ） -->
+            <div class="mx-auto mb-6 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-green-500 flex items-center justify-center">
+                <svg class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+                申込完了！
+            </h1>
+
+            <p class="text-gray-700 leading-relaxed mb-8 text-sm sm:text-base">
+                このたびは当イベントに申し込みいただき、誠にありがとうございます。<br>
+                <!-- ご登録いただいたメールアドレス宛に、申し込み内容の確認メールをお送りしておりますので、ご確認ください。 -->
+                ご登録いただいたXユーザーのDMに、申し込み内容の確認メールをお送りしておりますので、ご確認ください。
+            </p>
+        </div>
+
+            <!-- 戻るボタン（中央寄せ・小画面で幅いっぱい） -->
+            <section class="w-full bg-transparent pt-3">
+
+                <div class="mt-2 w-full">
+
+                    <a 
+                        href="index.html"
+                        class="block w-full bg-emerald-500 text-white hover:bg-emerald-600 px-6 py-3 rounded-md transition duration-300 text-center">
+
+                        戻る
+
+                    </a>
+
+                </div>
+
+            </section>
+    
+</body>
+<script src="js/index.js"></script>
+<script src="js/header/header.js"></script>
+<script src="js/input.js"></script>
+<script type="module" src="js/server/firebase.js"></script>
+</html>

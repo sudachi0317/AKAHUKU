@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- 🌿 ヘッダー -->
+    <div id="header-container"></div>
+    
+    <!-- 🌿 イベントポスター -->
+    <section class="bg-transparent pt-3">
+        <div id="eventposter-container" class="px-5">
+        </div>
+    </section>
+
+    <div class="relative">
+
+        <!-- 🌿 イベントプログラム -->
+        <section class="bg-transparent pt-3">
+            <div id="event-container" class="px-5"></div>
+        </section>
+
+        <!-- オーバーレイ -->
+        <div class="absolute inset-0 bg-black/50 flex items-center justify-center rounded-lg">
+            <span class="bg-transparent text-white px-6 py-2 rounded-full font-bold text-2xl text-center">
+                サンプル</br>※デザインは本番環境時に変更になる場合があります。
+            </span>
+        </div>
+
+    </div>
+
+    <!-- エントリー -->
+    <div class="w-full flex justify-center items-center py-10 px-5">
+        <section class="w-full max-w-6xl">
+            <div id="entry-container" class="w-full"></div>
+        </section>
+    </div>
+</body>
+<script src="js/index.js"></script>
+<script src="js/header/header.js"></script>
+<script src="js/button/button.js"></script>
+</html>

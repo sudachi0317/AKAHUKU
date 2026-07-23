@@ -1,0 +1,305 @@
+<!-- 注意事項 -->
+<div class="w-full max-w-4xl mx-auto mb-8 border-2 border-red-500 ring-2 ring-yellow-200 p-4 sm:p-6">
+
+    <h2 class="text-xl sm:text-2xl font-bold mb-4 text-center">
+        <u>⚠必ずお読みください⚠</u>
+    </h2>
+
+    <p class="text-sm sm:text-base lg:text-lg text-gray-700 leading-relaxed">
+        ・必ず参加者ご自身の情報のみご入力ください。<br>
+        （参加者ご本人以外の情報を入力された場合、参加をご遠慮いただく場合がございます。）<br>
+
+        ・安心してご参加いただくため、申し込み時に運営発行のクリエイター名と認証コードの入力が必要です。<br>
+
+        ・6～17歳の方は、保護者の同意書が必要です。
+    </p>
+
+</div>
+
+<!-- フォーム -->
+<form id="contactForm" class="space-y-5 w-full max-w-4xl mx-auto px-4 sm:px-6">
+
+
+    <!-- クリエイター名 -->
+    <div>
+
+        <label class="block text-sm sm:text-base font-medium">
+            クリエイター名
+            <span class="text-red-500">※必須</span>
+        </label>
+
+        <!-- クリエイター名 -->
+        <input
+            type="text"
+            id="creatorName"
+            name="creatorName"
+            required
+            class="w-full mt-1 p-3 border rounded-lg">
+
+            <p
+                id="creatorNameError"
+                class="text-red-500 text-sm mt-1">
+            </p>
+
+    </div>
+
+
+
+    <!-- メール -->
+    <div>
+
+        <label class="block text-sm sm:text-base font-medium">
+            X（旧Twitter）のユーザー名
+            <span class="text-red-500">※必須</span>
+        </label>
+
+        <input
+            type="Xusername"
+            id="Xusername"
+           
+            name="Xusername"
+            required
+            class="w-full mt-1 p-3 border rounded-lg">
+            <!-- id="Xusername" -->
+
+            <p
+                id="XusernameError"
+                class="text-red-500 text-sm mt-1">
+            </p>
+
+            <!-- <p
+                id="creatorXusernameError"
+                class="text-red-500 text-sm mt-1">
+            </p> -->
+    </div>
+
+
+
+    <!-- 年齢 -->
+    <div>
+
+        <label class="block text-sm sm:text-base text-gray-700 font-bold mb-2">
+            年齢
+            <span class="text-red-500">※必須</span>
+        </label>
+
+
+        <select
+            id="age"
+            name="age"
+            required
+            class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500">
+
+            <option value="">
+                選択してください
+            </option>
+
+            <option value="6-17">
+                6～17歳
+            </option>
+
+            <option value="18-19">
+                18～19歳
+            </option>
+
+            <option value="20-29">
+                20～29歳
+            </option>
+
+            <option value="30-39">
+                30～39歳
+            </option>
+
+            <option value="40-49">
+                40～49歳
+            </option>
+
+            <option value="50-59">
+                50～59歳
+            </option>
+
+            <option value="60+">
+                60歳以上
+            </option>
+
+            <option value="回答しない">
+                回答しない
+            </option>
+
+        </select>
+
+            <p
+                id="ageError"
+                class="text-red-500 text-sm mt-1">
+            </p>
+
+    </div>
+
+
+
+
+    <!-- 居住地域 -->
+    <div>
+
+        <label class="block text-sm sm:text-base text-gray-700 font-bold mb-2">
+            お住まいの都道府県
+            <span class="text-red-500">※必須</span>
+        </label>
+
+
+        <select
+            id="prefecture"
+            name="prefecture"
+            required
+            class="w-full px-4 py-3 border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+
+
+            <option value="">
+                選択してください
+            </option>
+            
+            <option value="北海道">北海道</option>
+            <option value="青森県">青森県</option>
+            <option value="岩手県">岩手県</option>
+            <option value="宮城県">宮城県</option>
+            <option value="秋田県">秋田県</option>
+            <option value="山形県">山形県</option>
+            <option value="福島県">福島県</option>
+            <option value="茨城県">茨城県</option>
+            <option value="栃木県">栃木県</option>
+            <option value="群馬県">群馬県</option>
+            <option value="埼玉県">埼玉県</option>
+            <option value="千葉県">千葉県</option>
+            <option value="東京都">東京都</option>
+            <option value="神奈川県">神奈川県</option>
+            <option value="新潟県">新潟県</option>
+            <option value="富山県">富山県</option>
+            <option value="石川県">石川県</option>
+            <option value="福井県">福井県</option>
+            <option value="山梨県">山梨県</option>
+            <option value="長野県">長野県</option>
+            <option value="岐阜県">岐阜県</option>
+            <option value="静岡県">静岡県</option>
+            <option value="愛知県">愛知県</option>
+            <option value="三重県">三重県</option>
+            <option value="滋賀県">滋賀県</option>
+            <option value="京都府">京都府</option>
+            <option value="大阪府">大阪府</option>
+            <option value="兵庫県">兵庫県</option>
+            <option value="奈良県">奈良県</option>
+            <option value="和歌山県">和歌山県</option>
+            <option value="鳥取県">鳥取県</option>
+            <option value="島根県">島根県</option>
+            <option value="岡山県">岡山県</option>
+            <option value="広島県">広島県</option>
+            <option value="山口県">山口県</option>
+            <option value="徳島県">徳島県</option>
+            <option value="香川県">香川県</option>
+            <option value="愛媛県">愛媛県</option>
+            <option value="高知県">高知県</option>
+            <option value="福岡県">福岡県</option>
+            <option value="佐賀県">佐賀県</option>
+            <option value="長崎県">長崎県</option>
+            <option value="熊本県">熊本県</option>
+            <option value="大分県">大分県</option>
+            <option value="宮崎県">宮崎県</option>
+            <option value="鹿児島県">鹿児島県</option>
+            <option value="沖縄県">沖縄県</option>
+
+            <!-- ※ここに他都道府県を追加 -->
+
+            <option value="海外">
+                海外
+            </option>
+        </select>
+
+            <p
+                id="prefectureError"
+                class="text-red-500 text-sm mt-1">
+            </p>
+    </div>
+
+    <!-- 認証コード -->
+    <div>
+        <label class="block text-sm font-medium">
+            認証コード
+            <span class="text-red-500">※必須</span>
+        </label>
+
+        <input
+            type="text"
+            id="authCode"
+            name="authCode"
+            required
+            class="w-full mt-1 p-3 border rounded-lg">
+
+            <p
+                id="authCodeError"
+                class="text-red-500 text-sm mt-1">
+            </p>
+    </div>
+
+    <!-- 問い合わせ -->
+    <div>
+
+        <label class="block text-sm sm:text-base font-medium">
+            その他ご質問・ご要望など
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            class="w-full mt-1 p-3 border rounded-lg"></textarea>
+    </div>
+
+    <!-- 同意 -->
+    <div class="text-sm text-gray-600 flex items-start gap-2">
+
+
+        <input
+            type="checkbox"
+            id="privacyAgree"
+            name="privacyAgree"
+            required
+            class="mt-1">
+
+
+        <span>
+
+            <a href="privacy.html" target="_blank" rel="noopener noreferrer">
+                <u>プライバシーポリシー</u>
+            </a>
+
+            に同意します
+
+        </span>
+
+            <p
+                id="privacyError"
+                class="text-red-500 text-sm mt-1">
+            </p>
+
+    </div>
+
+
+
+
+
+    <!-- 送信 -->
+    <button
+        type="submit"
+        class="w-full bg-[#7A9E7E] text-white py-3 rounded-lg hover:opacity-90 transition">
+
+        送信する
+
+    </button>
+
+
+
+</form>
+
+<div
+    id="formError"
+    class="hidden text-red-500 text-center font-bold mb-4">
+</div>
